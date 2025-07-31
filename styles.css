@@ -1,110 +1,133 @@
 body {
-  font-family: Arial, sans-serif;
-  background: #fafafa;
-  margin: 20px;
-  display: flex;
-  justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #74ebd5, #ACB6E5); /* Colorful gradient */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
+
+/* Starry background */
+#stars {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  background: black;
+}
+
 
 .container {
-  max-width: 480px;
-  width: 100%;
-  background: #fff;
-  padding: 24px;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgb(0 0 0 / 0.1);
+    background: linear-gradient(270deg, #ff4b4b, #4bff4b, #4b4bff, #ff4b4b);
+    background-size: 800% 800%;
+    animation: rgbFlow 12s ease infinite;
+    padding: 40px 30px;
+    border-radius: 18px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
 }
 
-h1, h2 {
+@keyframes rgbFlow {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+
+/* Highlight the title */
+h1 {
+  font-size: 2.2rem;
+  color: #fff;
   text-align: center;
-  color: #333;
-}
-
-.email-box {
-  display: flex;
-  gap: 8px;
-  margin-bottom: 15px;
-}
-
-.email-box input {
-  flex-grow: 1;
-  padding: 10px 12px;
-  font-size: 1.1em;
-  border: 2px solid #ddd;
-  border-radius: 5px;
-  background-color: #f0f0f0;
-}
-
-.email-box input:focus {
-  outline: none;
-  border-color: #007bff;
-  background-color: #fff;
-}
-
-.email-box button {
-  padding: 0 15px;
-  font-size: 1em;
-  border: none;
-  background-color: #007bff;
-  color: white;
-  border-radius: 5px;
-  cursor: pointer;
-  user-select: none;
-}
-
-.email-box button:disabled {
-  background-color: #999;
-  cursor: not-allowed;
-}
-
-.buttons {
-  display: flex;
-  justify-content: space-between;
+  background: linear-gradient(90deg, #ff7e5f, #feb47b, #86fde8, #a7ff83);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 4s linear infinite;
+  font-weight: bold;
   margin-bottom: 20px;
 }
 
-.buttons button {
-  padding: 10px 16px;
-  font-size: 1em;
-  border: none;
-  background-color: #28a745;
-  color: white;
-  border-radius: 5px;
-  cursor: pointer;
-  user-select: none;
-  flex-grow: 1;
-  margin: 0 5px;
+/* Twinkling text animation */
+@keyframes shine {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
 }
 
-.buttons button#refresh-btn {
-  background-color: #17a2b8;
+
+input[type="text"] {
+    width: 70%;
+    padding: 12px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    transition: 0.3s ease;
 }
 
-.buttons button:disabled {
-  background-color: #999;
-  cursor: not-allowed;
+input[type="text"]:focus {
+    border-color: #00b894;
+    box-shadow: 0 0 5px #00b89450;
 }
 
-.inbox ul {
-  list-style: none;
-  padding: 0;
-  max-height: 300px;
-  overflow-y: auto;
-  border: 1px solid #ddd;
-  border-radius: 6px;
+button {
+    padding: 10px 16px;
+    margin: 6px;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
 }
 
-.inbox li {
-  padding: 10px;
-  border-bottom: 1px solid #eee;
-  cursor: pointer;
-  transition: background-color 0.2s;
+/* Colorful Buttons */
+button:nth-child(1) { background-color: #00b894; }  /* Copy */
+button:nth-child(2) { background-color: #6c5ce7; }  /* Generate */
+button:nth-child(3) { background-color: #0984e3; }  /* Refresh */
+button:nth-child(4) { background-color: #fdcb6e; color: #000; }  /* Show Previous */
+button:nth-child(5) { background-color: #d63031; }  /* Clear */
+
+button:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
 }
 
-.inbox li:last-child {
-  border-bottom: none;
+.inbox {
+    margin-top: 30px;
+    text-align: left;
 }
 
-.inbox li:hover {
-  background-color: #f5f5f5;
+.inbox h2 {
+    font-size: 20px;
+    color: #2d3436;
+    margin-bottom: 10px;
+}
+
+#emailList {
+    border: 1px solid #ccc;
+    padding: 12px;
+    border-radius: 8px;
+    background-color: #fafafa;
+    font-style: italic;
+    color: #636e72;
 }
