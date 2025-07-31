@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <canvas id="stars"></canvas>
   <div class="container">
     <h1>Disposable Email Generator</h1>
     <div class="email-box">
@@ -32,5 +33,55 @@
   </div>
 
   <script src="script.js"></script>
+  <script>
+  const canvas = document.getElementById("stars");
+  const ctx = canvas.getContext("2d");
+
+  let stars = [];
+
+  function resizeCanvas() {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+  }
+
+  function createStars(count) {
+    stars = [];
+    for (let i = 0; i < count; i++) {
+      stars.push({
+        x: Math.random() * canvas.width,
+        y: Math.random() * canvas.height,
+        radius: Math.random() * 1.2 + 0.2,
+        opacity: Math.random(),
+        delta: Math.random() * 0.02,
+      });
+    }
+  }
+
+  function drawStars() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    for (let s of stars) {
+      ctx.beginPath();
+      ctx.arc(s.x, s.y, s.radius, 0, 2 * Math.PI);
+      ctx.fillStyle = `rgba(255, 255, 255, ${s.opacity})`;
+      ctx.fill();
+
+      s.opacity += s.delta;
+      if (s.opacity <= 0 || s.opacity >= 1) {
+        s.delta = -s.delta;
+      }
+    }
+    requestAnimationFrame(drawStars);
+  }
+
+  window.addEventListener("resize", () => {
+    resizeCanvas();
+    createStars(200);
+  });
+
+  resizeCanvas();
+  createStars(200);
+  drawStars();
+</script>
+
 </body>
 </html>
