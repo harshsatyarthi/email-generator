@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Disposable Email Generator</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Disposable Email Generator</h1>
+    <div class="email-box">
+      <input type="text" id="temp-email" readonly placeholder="Generate an email address" />
+      <button id="copy-btn" title="Copy email" disabled>Copy</button>
+    </div>
+    <div class="buttons">
+      <button id="generate-btn">Generate New Email</button>
+      <button id="refresh-btn" disabled>Refresh Inbox</button>
+      <button id="show-previous-btn">Show Previous Emails</button>
+      <button id="clear-btn" style="background-color:#e53935;color:white;">Clear</button>
+    </div>
+    <div class="inbox">
+      <h2>Inbox</h2>
+      <ul id="email-list">
+        <li>No emails yet.</li>
+      </ul>
+    <div id="previous-emails" style="display:none; margin-top:20px;">
+      <h2>Previous Emails</h2>
+      <ul id="previous-email-list"></ul>
+    </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
