@@ -1,0 +1,14 @@
+{
+  "name": "temp-email-backend",
+  "version": "1.0.0",
+  "description": "Disposable Email Generator Backend",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "nanoid": "^4.0.0"
+  }
+}
