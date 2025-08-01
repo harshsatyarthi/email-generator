@@ -51,4 +51,15 @@ cd email-generator
 cd temp-email-backend
 npm install
 npm start
+```
 
+### 2: Build the Docker Image
+```bash
+docker build -t email-generator
+ ```
+
+### 3: Run the Container
+```bash
+docker run -d -p 5000:5000 disposable-email
+Now open your browser at http://localhost:3000
+```
