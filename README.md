@@ -32,8 +32,8 @@
 
  ## 📦 Tech Stack
 
-- HTML5, CSS3, JavaScript (Vanilla)
-- Optional backend/email API (e.g., Mail.tm)
+- HTML5, CSS3, JavaScript 
+- Backend/email API (e.g., Mail.tm)
 - Docker (for environment and deployment)
 
 ---
