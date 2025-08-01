@@ -60,6 +60,6 @@ docker build -t email-generator
 
 ### 3: Run the Container
 ```bash
-docker run -d -p 5000:5000 disposable-email
-Now open your browser at http://localhost:3000
+docker run -d -p 5000:5000 email-generator
+Now open your browser at http://localhost:5000
 ```
