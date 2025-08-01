@@ -17,7 +17,7 @@
 - 🕓 **View previous emails**
 - 🧹 **Clear inbox with one click**
 - ✨ Stylish UI with a black **twinkling star** background
-- - ⚡ Animated RGB gradient container
+- ⚡ Animated RGB gradient container
 - 📥 Supports integration with public email APIs like [mail.tm](https://mail.tm)
 - 📱 Fully responsive
 - 🧠 Easy to customize and extend
@@ -25,8 +25,9 @@
 ---
 
 ## 🖼️ Preview
-<img width="1366" height="602" alt="Screenshot (223)" src="https://github.com/user-attachments/assets/c463267b-ec9c-4a84-b29d-5e658a9558ed" 
  
+ <img width="1366" height="602" alt="Screenshot (223)" src="https://github.com/user-attachments/assets/d0d6ac6f-320b-4fbf-bdee-e4091403d94e" />
+
 ---
 
  ## 📦 Tech Stack
