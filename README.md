@@ -5,7 +5,7 @@
 [![CSS](https://img.shields.io/badge/CSS3-%231572B6.svg?&logo=css3&logoColor=white)]()
 [![JavaScript](https://img.shields.io/badge/JavaScript-%23F7DF1E.svg?&logo=javascript&logoColor=black)]()
 
-🔗 **Live Demo**:https://github.com/harshsatyarthi/email-generator.git
+🔗 **Live Demo**:http://127.0.0.1:5500/index.html
 📂 **Project Status**: Actively maintained 🚀
 
 ---
