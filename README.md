@@ -17,12 +17,29 @@
 - 🕓 **View previous emails**
 - 🧹 **Clear inbox with one click**
 - ✨ Stylish UI with a black **twinkling star** background
-- 📱 Responsive design (mobile-friendly)
+- - ⚡ Animated RGB gradient container
+- 📥 Supports integration with public email APIs like [mail.tm](https://mail.tm)
+- 📱 Fully responsive
+- 🧠 Easy to customize and extend
 
 ---
 
 ## 🖼️ Preview
-<img width="1366" height="602" alt="Screenshot (223)" src="https://github.com/user-attachments/assets/c463267b-ec9c-4a84-b29d-5e658a9558ed" />
+<img width="1366" height="602" alt="Screenshot (223)" src="https://github.com/user-attachments/assets/c463267b-ec9c-4a84-b29d-5e658a9558ed" 
+ 
+---
+
+ ## 📦 Tech Stack
+
+- HTML5, CSS3, JavaScript (Vanilla)
+- Optional backend/email API (e.g., Mail.tm)
+- Docker (for environment and deployment)
+
+---
+
+## 🐳 Run with Docker
+
+You can run this project inside a Docker container for consistent environments and easy deployment.
 
 ## 🚀 Getting Started
 
