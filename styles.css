@@ -55,6 +55,7 @@ h1 {
   text-align: center;
   background: linear-gradient(90deg, #ff7e5f, #feb47b, #86fde8, #a7ff83);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: shine 4s linear infinite;
   font-weight: bold;
